@@ -24,9 +24,9 @@ const contactInfo = [
     icon: Phone,
     title: "Phone Numbers",
     details: [
-      "+251 911 123 456 (24/7 Emergency)",
-      "+251 11 551 8429 (Office Hours)",
-      "+251 944 567 890 (Bookings)",
+      "0909930093 (24/7 Emergency)",
+      "0904149468 (Office Hours)",
+      "0944780840 (Bookings)",
     ],
     color: "text-primary",
   },
@@ -44,9 +44,9 @@ const contactInfo = [
     icon: MapPin,
     title: "Office Location",
     details: [
-      "Bole Road, Near Edna Mall",
+      "Bulgaria Aynalem Baze building 5th floor 514",
       "Addis Ababa, Ethiopia",
-      "GPS: 9.0180° N, 38.7614° E",
+      "GPS: 8.9985° N, 38.7492° E",
     ],
     color: "text-primary",
   },
@@ -54,8 +54,7 @@ const contactInfo = [
     icon: Clock,
     title: "Office Hours",
     details: [
-      "Monday - Friday: 8:00 AM - 6:00 PM",
-      "Saturday: 9:00 AM - 4:00 PM",
+      "Monday - Saturday: 8:00 AM - 8:00 PM",
       "Sunday: Emergency only",
     ],
     color: "text-secondary",
@@ -163,7 +162,7 @@ export default function Contact() {
                       Speak directly with our team
                     </p>
                     <Badge className="bg-primary text-white">
-                      +251 911 123 456
+                      0909930093
                     </Badge>
                   </div>
                   <div className="text-center p-4 bg-muted/30 rounded-lg">
@@ -180,7 +179,7 @@ export default function Contact() {
                     <p className="text-sm text-muted-foreground mb-2">
                       Face-to-face consultation
                     </p>
-                    <Badge variant="outline">Bole Road, Addis Ababa</Badge>
+                    <Badge variant="outline">Bulgaria Aynalem Baze building 5th floor 514</Badge>
                   </div>
                 </div>
               </CardContent>
