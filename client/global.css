@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 25 30% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 30% 20%;
+
+    --primary: 32 65% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 28 68% 52%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 25 15% 92%;
+    --muted-foreground: 25 20% 45%;
+
+    --accent: 32 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 20% 90%;
+    --input: 25 20% 90%;
+    --ring: 32 65% 45%;
+
+    --radius: 0.5rem;
+
+    /* Muted color palette */
+    --success: 80 60% 50%;
+    --success-foreground: 0 0% 100%;
+    --warning: 32 65% 45%;
+    --warning-foreground: 0 0% 100%;
+    --info: 28 68% 52%;
+    --info-foreground: 0 0% 100%;
+    --vibrant-orange: 32 65% 50%;
+    --vibrant-red: 0 84% 60%;
+    --vibrant-blue: 200 70% 55%;
+    --vibrant-purple: 270 60% 50%;
+    --vibrant-teal: 170 70% 50%;
+    --vibrant-pink: 350 80% 60%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 30% 15%;
+    --foreground: 32 20% 90%;
+
+    --card: 25 30% 18%;
+    --card-foreground: 32 20% 90%;
+
+    --popover: 25 30% 18%;
+    --popover-foreground: 32 20% 90%;
+
+    --primary: 32 65% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 28 68% 62%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 25 30% 25%;
+    --muted-foreground: 25 20% 70%;
+
+    --accent: 32 60% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 30% 25%;
+    --input: 25 30% 25%;
+    --ring: 32 65% 60%;
+
+    /* Additional vibrant colors for dark mode */
+    --success: 80 60% 60%;
+    --success-foreground: 0 0% 100%;
+    --warning: 32 65% 55%;
+    --warning-foreground: 0 0% 0%;
+    --info: 28 68% 62%;
+    --info-foreground: 0 0% 100%;
+    --vibrant-orange: 32 65% 60%;
+    --vibrant-red: 0 84% 65%;
+    --vibrant-blue: 200 70% 65%;
+    --vibrant-purple: 270 60% 65%;
+    --vibrant-teal: 170 70% 60%;
+    --vibrant-pink: 350 80% 70%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
